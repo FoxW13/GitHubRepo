@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Challenge 1
 		 * Assignment #2
-		 * This script uses the players input to controll the plane and lets me edit the rotation and forward speed.
+		 * This script uses the players input to control the plane and lets me edit the rotation and forward speed.
 		 */
 public class PlayerControllerX : MonoBehaviour
 {
