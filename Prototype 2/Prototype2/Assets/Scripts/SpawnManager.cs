@@ -16,6 +16,7 @@ public class SpawnManager : MonoBehaviour
     private float rightBound = 14;
     private float spawnPosZ = 20;
 
+    public bool gameOver = false;
    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -27,7 +28,23 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
+        //InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
+
+        StartCoroutine(SpawnRandomPrefabWithCoroutine());
+    }
+
+    IEnumerator SpawnRandomPrefabWithCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
+
+        while (!gameOver)
+        {
+            SpawnRandomPrefab();
+
+            float randomDelay = Random.Range(1.5f, 2.0f);
+
+            yield return new WaitForSeconds(randomDelay);
+        }
     }
 
     void SpawnRandomPrefab()
@@ -38,4 +55,6 @@ public class SpawnManager : MonoBehaviour
 
         Instantiate(prefabsToSpawn[prefabIndex], spawnPos, prefabsToSpawn[prefabIndex].transform.rotation);
     }
+    
+    
 }
