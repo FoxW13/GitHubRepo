@@ -4,6 +4,13 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+		 * Fox Weyouth
+		 * Prototype 2
+		 * Assignment 3
+		 * This script displays the score on the canvas.
+		 */
+
 public class DisplayScore : MonoBehaviour
 {
     public Text textbox;
@@ -13,12 +20,13 @@ public class DisplayScore : MonoBehaviour
 
     void Start()
     {
-        textbox = GetComponent<TextElementEnumerator>();
+        textbox = GetComponent<Text>();
+        textbox.text = "Score: 0";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        textbox.text = "Score: " + score;
     }
 }

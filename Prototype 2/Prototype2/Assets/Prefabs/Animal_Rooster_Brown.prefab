@@ -1001,7 +1001,6 @@ GameObject:
   - component: {fileID: 5306119954992248976}
   - component: {fileID: 3485577657040726794}
   - component: {fileID: 7388360949078556376}
-  - component: {fileID: 737370753270090557}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
   m_TagString: Untagged
@@ -1075,7 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d930ff81e74b3e4eb58a183a50bcd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 6
 --- !u!114 &7388360949078556376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,18 +1089,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 20
   bottomBounds: -10
---- !u!114 &737370753270090557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4065522298152725622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f15e287f487131d41a48fa7febf7f542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4065522298152729512
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,19 +16,16 @@ public class SpawnManager : MonoBehaviour
     private float rightBound = 14;
     private float spawnPosZ = 20;
 
+
+
+    public HealthSystem healthSystem;
+
     public bool gameOver = false;
-   /*void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SpawnRandomPrefab();
-        }
-    }
-   */
 
     void Start()
     {
         //InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
+        healthSystem = GameObject.FindGameObjectsWithTag("HealthSystem").GetComponent<HealthSystem>();
 
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
     }
