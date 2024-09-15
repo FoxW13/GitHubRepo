@@ -23,7 +23,8 @@ public class DestroyOutOfBounds : MonoBehaviour
 
         if (transform.position.z < bottomBounds)
         {
-            Debug.Log("Game Over!");
+            //Debug.Log("Game Over!");
+            GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>().TakeDamage();
 
             Destroy(gameObject);
         }
