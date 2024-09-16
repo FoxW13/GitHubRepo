@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Fox Weymouth
+		 * Challenge 2
+		 * Assignment 3
+		 * This code spawns the balls at random intervals and positions.
+		 */
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] ballPrefabs;
@@ -25,8 +32,10 @@ public class SpawnManagerX : MonoBehaviour
         // Generate random ball index and random spawn position
         Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
 
+        int prefabIndex = Random.Range(0, ballPrefabs.Length);
+
         // instantiate ball at random spawn location
-        Instantiate(ballPrefabs[0], spawnPos, ballPrefabs[0].transform.rotation);
+        Instantiate(ballPrefabs[prefabIndex], spawnPos, ballPrefabs[prefabIndex].transform.rotation);
     }
 
 }
