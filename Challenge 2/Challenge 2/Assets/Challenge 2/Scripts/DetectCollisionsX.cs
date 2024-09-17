@@ -12,7 +12,7 @@ public class DetectCollisionsX : MonoBehaviour
 {
 	private DisplayScore displayScoreScript;
 
-	private void start()
+	private void Start()
 	{
 		displayScoreScript = GameObject.FindGameObjectWithTag("DisplayScoreText").GetComponent<DisplayScore>();
 	}
@@ -20,6 +20,7 @@ public class DetectCollisionsX : MonoBehaviour
     {
 		displayScoreScript.score++;
         Destroy(gameObject);
+		Destroy(other.gameObject);
     }
 
 }

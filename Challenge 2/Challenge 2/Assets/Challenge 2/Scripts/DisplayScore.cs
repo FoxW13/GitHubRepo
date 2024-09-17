@@ -17,6 +17,7 @@ public class DisplayScore : MonoBehaviour
 
     public int score = 0;
 
+    public GameObject winText;
 
     void Start()
     {
@@ -28,5 +29,16 @@ public class DisplayScore : MonoBehaviour
     void Update()
     {
         textbox.text = "Score: " + score;
+
+        if (score >= 5)
+        {
+            GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>().gameOver = true;
+            winText.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            }
+        }
     }
 }

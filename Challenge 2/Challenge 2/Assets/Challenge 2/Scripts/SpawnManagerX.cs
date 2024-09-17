@@ -19,7 +19,6 @@ public class SpawnManagerX : MonoBehaviour
 
     private float startDelay = 1.0f;
     private float spawnInterval = 4.0f;
-    public bool gameOver = false;
 
     public HealthSystem healthSystem; 
 
@@ -27,7 +26,7 @@ public class SpawnManagerX : MonoBehaviour
     void Start()
     {
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
-        InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval);
+        //InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval);
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
     }
 
@@ -35,8 +34,12 @@ public class SpawnManagerX : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
 
+        
+
         while (!healthSystem.gameOver)
         {
+            Debug.Log("HealthSystem.gameover:" + healthSystem.gameOver);
+            Debug.Log("Entered while loop");
             SpawnRandomBall();
 
             float randomDelay = Random.Range(3.0f, 5.0f);

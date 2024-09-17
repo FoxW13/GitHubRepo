@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44634527, g: 0.49101967, b: 0.5470841, a: 1}
+  m_IndirectSpecularColor: {r: 0.4463446, g: 0.4910189, b: 0.5470826, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -779,8 +779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -222.4, y: 260.6}
-  m_SizeDelta: {x: -444.76657, y: -521.1699}
+  m_AnchoredPosition: {x: -212.2, y: 186.01}
+  m_SizeDelta: {x: -424.29263, y: -374.40393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473952582
 MonoBehaviour:
@@ -800,7 +800,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: -60.74
+  m_Spacing: -68.47
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1608,8 +1608,7 @@ MonoBehaviour:
   - {fileID: 2178073922435996824, guid: 1d143480adadf43389395930eee2b5cf, type: 3}
   - {fileID: 4524317531697499709, guid: a325bcb65fd94414191d0ddc2514e2dc, type: 3}
   - {fileID: 7945815000853930370, guid: fc41e6839a5494e0cbaea5f0081c271d, type: 3}
-  gameOver: 0
-  healthSystem: {fileID: 0}
+  healthSystem: {fileID: 647526579}
 --- !u!1 &1025854373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289, y: 209}
+  m_AnchoredPosition: {x: -299, y: 121.7}
   m_SizeDelta: {x: 195.52332, y: 47.70883}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389325566
@@ -1826,6 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 1389325567}
   score: 0
+  winText: {fileID: 1439655903}
 --- !u!114 &1389325567
 MonoBehaviour:
   m_ObjectHideFlags: 0
