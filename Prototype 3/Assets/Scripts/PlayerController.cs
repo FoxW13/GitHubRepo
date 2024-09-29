@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Prototype 3
 		 * Assignment 4
-		 * This script controls the jumping of the player and games over on collision.
+		 * This script controls the jumping of the player and games over on collision, it also runs all animations and sound effects.
 		 */
 
 public class PlayerController : MonoBehaviour
