@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Challenge 3
 		 * Assignment 4
-		 * This script 
+		 * This script spawns the money and bombs every couple seconds and random.
 		 */
 
 public class SpawnManagerX : MonoBehaviour

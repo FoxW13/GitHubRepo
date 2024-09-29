@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 		 * Fox Weymouth
 		 * Challenge 3
 		 * Assignment 4
-		 * This script 
+		 * This script runs the UI on the canvas, showing the score, game over texts, and restarting the game when R is pressed.
 		 */
 
 public class UIManager : MonoBehaviour

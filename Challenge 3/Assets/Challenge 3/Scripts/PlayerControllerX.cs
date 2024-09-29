@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Challenge 3
 		 * Assignment 4
-		 * This script 
+		 * This script allows the player to move up by pressing space, doesnt let the player go up if the balloon goes too high, has all the audio, and controlls what all the collisions do.
 		 */
 
 public class PlayerControllerX : MonoBehaviour

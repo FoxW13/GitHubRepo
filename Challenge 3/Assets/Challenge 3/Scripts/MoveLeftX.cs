@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Challenge 3
 		 * Assignment 4
-		 * This script 
+		 * This script moves the background left and destroys objects that go too far left.
 		 */
 
 public class MoveLeftX : MonoBehaviour

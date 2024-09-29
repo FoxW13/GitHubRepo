@@ -6,7 +6,7 @@ using UnityEngine;
 		 * Fox Weymouth
 		 * Challenge 3
 		 * Assignment 4
-		 * This script 
+		 * This script repeates the background.
 		 */
 
 public class RepeatBackgroundX : MonoBehaviour
