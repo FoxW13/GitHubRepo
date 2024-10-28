@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Fox Weymouth
+		 * 3D Game Prototype
+		 * Assignment 5B
+		 * This code controls the gun with raycast, having its damage, range, particle system, and hit force all ran when the shoot function is called.
+		 */
 public class ShootWithRaycasts : MonoBehaviour
 {
     public float damage = 10f;
