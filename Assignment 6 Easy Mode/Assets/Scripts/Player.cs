@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Fox Weymouth
+		 * Assignment 6 easy mode
+		 * Assignment 6
+		 * This code handles the interactions with the player and the collectible.
+		 */
+
+
 public class Player : MonoBehaviour
 {
     public static Player Instance;
