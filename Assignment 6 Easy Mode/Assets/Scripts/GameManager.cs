@@ -66,12 +66,16 @@ public class GameManager : Singleton<GameManager>
     public void Pause()
     {
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
         pauseMenu.SetActive(true);
     }
+
+    
 
     public void Unpause()
     {
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
     }
 
