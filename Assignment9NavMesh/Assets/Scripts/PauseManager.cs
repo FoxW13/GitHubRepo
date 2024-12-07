@@ -30,7 +30,7 @@ public class PauseManager : MonoBehaviour
     void Update()
     {
         // Toggle pause menu when Escape is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (isPaused)
             {
@@ -63,6 +63,6 @@ public class PauseManager : MonoBehaviour
     void GoToMenu()
     {
         Time.timeScale = 1f; // Ensure the time scale is normal when switching scenes
-        SceneManager.LoadScene(6); // Assuming Scene 6 is your menu scene
+        SceneManager.LoadScene(0); // Assuming Scene 6 is your menu scene
     }
 }
