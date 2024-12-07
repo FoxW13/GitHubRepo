@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+		 * Fox Weymouth
+		 * Assignment9NavMesh
+		 * Assignemnt 9
+		 * This code makes the player go to where the user clicked in game.
+		 */
 public class MoveToClickPoint : MonoBehaviour
 {
 

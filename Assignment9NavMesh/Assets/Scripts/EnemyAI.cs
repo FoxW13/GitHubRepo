@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
+/*
+		 * Fox Weymouth
+		 * Assignment9NavMesh
+		 * Assignemnt 9
+		 * This code controls the enemy, with it finding the player in a certian radius, chasing them,
+		 * , then if they get too far away they stop chasing.
+		 */
+
 public class EnemyAI : MonoBehaviour
 {
 

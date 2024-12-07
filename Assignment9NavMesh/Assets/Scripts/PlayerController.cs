@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
+/*
+		 * Fox Weymouth
+		 * Assignment9NavMesh
+		 * Assignemnt 9
+		 * This code controlls the player and when the user left clicks, the player goes to it.
+		 * It also runs the animation with it. 
+		 */
 public class PlayerController : MonoBehaviour
 {
 
