@@ -1,6 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+
+/*
+		 * Fox Weymouth
+		 * Challenge 4
+		 * Assignment 7
+		 * This code runs the camera to move the focal point with the player.
+		 */ 
 
 public class RotateCameraX : MonoBehaviour
 {

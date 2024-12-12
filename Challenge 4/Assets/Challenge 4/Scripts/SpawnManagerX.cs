@@ -1,6 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+/*
+		 * Fox Weymouth
+		 * Challenge 4
+		 * Assignment 7
+		 * This code runs the spawning of the enemies and powerups, also increasing the speed each wave.
+		 * It also runs the restarting.
+		 */
 
 public class SpawnManagerX : MonoBehaviour
 {
@@ -14,9 +24,16 @@ public class SpawnManagerX : MonoBehaviour
     public int enemyCount;
     public int waveCount = 1;
 
+    public GameObject player;
 
-    public GameObject player; 
+    public EnemyX enemySpeed;
 
+    public Text score;
+    public Text win;
+    public Text lose;
+
+    private bool gameOver = false;
+    private bool winner = false;
     // Update is called once per frame
     void Update()
     {
@@ -24,13 +41,27 @@ public class SpawnManagerX : MonoBehaviour
 
         if (enemyCount == 0)
         {
+            score.text = "Wave: " + waveCount.ToString();
             SpawnEnemyWave(waveCount);
+
+
+            if (waveCount > 10)
+            {
+                score.gameObject.SetActive(false);
+                win.gameObject.SetActive(true);
+                winner = true;
+                Time.timeScale = 0f;
+            }
         }
 
+        if (Input.GetKeyDown(KeyCode.R) && (gameOver == true || winner == true))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     // Generate random spawn position for powerups and enemy balls
-    Vector3 GenerateSpawnPosition ()
+    Vector3 GenerateSpawnPosition()
     {
         float xPos = Random.Range(-spawnRangeX, spawnRangeX);
         float zPos = Random.Range(spawnZMin, spawnZMax);
@@ -55,12 +86,13 @@ public class SpawnManagerX : MonoBehaviour
         }
 
         waveCount++;
+        enemySpeed.speed += 1;
         ResetPlayerPosition(); // put player back at start
 
     }
 
     // Move player back to position in front of own goal
-    void ResetPlayerPosition ()
+    void ResetPlayerPosition()
     {
         player.transform.position = new Vector3(0, 1, -7);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -68,4 +100,11 @@ public class SpawnManagerX : MonoBehaviour
 
     }
 
+    public void Lose()
+    {
+        score.gameObject.SetActive(false);
+        lose.gameObject.SetActive(true);
+        gameOver = true;
+        Time.timeScale = 0f;
+    }
 }
