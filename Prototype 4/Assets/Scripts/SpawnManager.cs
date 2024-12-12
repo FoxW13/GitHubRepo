@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+		 * Fox Weymouth
+		 * Prototype 4
+		 * Assignment 9
+		 * This code runs the spawing of the balls and powerups as well as the winning condition and 
+		 * restarting.
+		 */
 public class SpawnManager : MonoBehaviour
 {
 

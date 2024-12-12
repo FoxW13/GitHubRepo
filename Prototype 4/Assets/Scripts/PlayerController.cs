@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+		 * Fox Weymouth
+		 * Prototype 4
+		 * Assignment 9
+		 * This code controls the player, the powerup effects, and the losing condition.
+		 */
+
 public class PlayerController : MonoBehaviour
 {
 

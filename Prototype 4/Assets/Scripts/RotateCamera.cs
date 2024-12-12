@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Fox Weymouth
+		 * Prototype 4
+		 * Assignment 9
+		 * This code keeps the camera on the focal point.
+		 */
+
 public class RotateCamera : MonoBehaviour
 {
     public float rotationSpeed;

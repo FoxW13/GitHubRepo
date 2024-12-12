@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Fox Weymouth
+		 * Prototype 4
+		 * Assignment 9
+		 * This code controls the enemy, making the always go towards the player.
+		 */
+
 public class EnemyAI : MonoBehaviour
 {
     private Rigidbody enemyRb;
