@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float speed = 3.0f;
     private Rigidbody enemyRb;
     private GameObject player;
-
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,17 +15,19 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Vector3 lookDirection = (player.transform.position - transform.position).normalized;
-
-        enemyRb.AddForce(lookDirection * speed);
-
-
         if (transform.position.y < -10)
         {
             Destroy(gameObject);
         }
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Vector3 lookDirection = (player.transform.position - transform.position).normalized;
+
+        enemyRb.AddForce(lookDirection * speed);
     }
 }
